@@ -1,0 +1,31 @@
+import os
+import csv
+
+# create the path name to access the bank data in a csv file 
+with open('PyBank_Resources_budget_data.csv', 'r') as csv_file: 
+    csv_reader = csv.reader(csv_file, delimiter=",")
+    # next(csv_reader, None)
+    for row in csv_reader:
+        print(row)
+
+# open the output file
+with open('PyBank_Resources_budget_data.csv', 'w') as PyBank_budget_data:
+
+# Initialize csv.writer
+    writer = csv.writer(PyBank_budget_data)
+    writer.writerow([""])
+
+# write the header row with    
+for row in writer:
+    Date.append(row[0])
+    totalMonths = len(Date)
+    Profit/Losses.append(row[0])
+
+#     total += int(row[1])
+
+# final_day = int(Profit/Losses[-1])
+# first_day = int(Profit/Losses[0])
+# average = float((final_day-first_day)/(totalMonths-1))
+# moneyTime = dict(zip(Date,Profit/Losses))
+
+# print("totalMonths: " + str(totalMonths))
